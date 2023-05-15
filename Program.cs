@@ -12,7 +12,30 @@ if (R1)
 {
     if (R2)
     {
-     Console.ForegroundColor = ConsoleColor.DarkGreen 
-     texto = ""
+     Console.ForegroundColor = ConsoleColor.DarkGreen;
+     texto = "Que bom, está funcionando!";
+    }
+    else 
+    {
+        Console.ForegroundColor = ConsoleColor.DarkBlue;
+        texto = "Use silver tape.";
     }
 }
+else 
+{
+    if (R2)
+    {
+        Console.ForegroundColor = ConsoleColor.DarkBlue;
+        texto = "Otimo!";
+    }
+    else 
+    {
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        texto = "Use o WD-40.";
+    }
+}
+
+Console.WriteLine("");
+Console.WriteLine(texto);
+Console.WriteLine("");
+Console.ResetColor();
